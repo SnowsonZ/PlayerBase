@@ -5,11 +5,11 @@ project.ext {
     javaMaxHeapSize = '4G'
 
     //Android compile
-    compileSdkVersion = 26
-    buildToolsVersion = "26.0.2"
+    compileSdkVersion = 27
+    buildToolsVersion = "27.0.2"
     minSdkVersion = 17
     targetSdkVersion = 26
-    supportLibVersion = "26.1.0"
+    supportLibVersion = "27.1.1"
 
     //bugly config
     buglyAppId = "a94f6c712b"
