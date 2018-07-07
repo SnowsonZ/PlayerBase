@@ -1,16 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
+apply from: "${project.rootDir}/common_config.gradle"
 
 // 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
 version = "3.3.0"
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion project.ext.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -33,8 +34,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    api "com.android.support:appcompat-v7:${project.ext.supportLibVersion}"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

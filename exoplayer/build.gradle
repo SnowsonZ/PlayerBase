@@ -15,15 +15,15 @@
  */
 
 apply plugin: 'com.android.library'
-
+apply from: "${project.rootDir}/common_config.gradle"
 android {
-    compileSdkVersion 27
+    compileSdkVersion project.ext.compileSdkVersion
 
 
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 27
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -42,7 +42,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
