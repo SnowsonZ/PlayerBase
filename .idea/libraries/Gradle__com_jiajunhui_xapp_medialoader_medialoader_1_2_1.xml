@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.jiajunhui.xapp.medialoader:medialoader-1.2.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medialoader-1.2.1.aar/d01cae64ca81275387daec8d5e6cbbcb/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medialoader-1.2.1.aar/d01cae64ca81275387daec8d5e6cbbcb/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medialoader-1.2.1.aar/aeb7665902e30a1491484a44107199ea/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medialoader-1.2.1.aar/aeb7665902e30a1491484a44107199ea/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
